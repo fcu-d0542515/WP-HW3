@@ -6,15 +6,14 @@
 		<title>溫度轉換程式</title>
 		<script type = "text/javascript">
 			var Celsius;
-			var Fahrenheit;
-			
+		
 			Celsius = window.prompt("輸入攝氏溫度","0");
 			
-			Fahrenheit = transform(Celsius)
+			Fahrenheit(Celsius)
 			
-			document.writeln("<h1>攝氏溫度為"+Celsius+"時，華氏溫度為"+Fahrenheit+"</h1>");
+			document.writeln("<h1>攝氏溫度為"+Celsius+"時，華氏溫度為"+Fahrenheit(Celsius)+"</h1>");
 			
-			function transform(celsius)
+			function Fahrenheit(celsius)
 			{
 				return celsius*(9/5)+32;
 			}
