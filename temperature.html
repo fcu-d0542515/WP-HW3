@@ -5,16 +5,19 @@
 		<meta charset = "utf-8">
 		<title>溫度轉換程式</title>
 		<script type = "text/javascript">
-			<!--
 			var Celsius;
 			var Fahrenheit;
 			
 			Celsius = window.prompt("輸入攝氏溫度","0");
 			
-			Fahrenheit = Celsius*(9/5)+32;
+			Fahrenheit = transform(Celsius)
 			
 			document.writeln("<h1>攝氏溫度為"+Celsius+"時，華氏溫度為"+Fahrenheit+"</h1>");
-			-->
+			
+			function transform(celsius)
+			{
+				return celsius*(9/5)+32;
+			}
 		</script>
 	</head>
 </html>
